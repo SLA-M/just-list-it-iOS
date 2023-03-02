@@ -14,6 +14,7 @@
 		0415DEEC29B0384800B03C30 /* Just_List_ItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415DEEB29B0384800B03C30 /* Just_List_ItTests.swift */; };
 		0415DEF629B0384800B03C30 /* Just_List_ItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415DEF529B0384800B03C30 /* Just_List_ItUITests.swift */; };
 		0415DEF829B0384800B03C30 /* Just_List_ItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415DEF729B0384800B03C30 /* Just_List_ItUITestsLaunchTests.swift */; };
+		0415DF0529B038C900B03C30 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415DF0429B038C900B03C30 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0415DEF129B0384800B03C30 /* Just List ItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Just List ItUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0415DEF529B0384800B03C30 /* Just_List_ItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just_List_ItUITests.swift; sourceTree = "<group>"; };
 		0415DEF729B0384800B03C30 /* Just_List_ItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Just_List_ItUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0415DF0429B038C900B03C30 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		0415DED929B0384600B03C30 /* Just List It */ = {
 			isa = PBXGroup;
 			children = (
+				0415DF0429B038C900B03C30 /* LoginView.swift */,
 				0415DEDA29B0384600B03C30 /* Just_List_ItApp.swift */,
 				0415DEDC29B0384600B03C30 /* ContentView.swift */,
 				0415DEDE29B0384800B03C30 /* Assets.xcassets */,
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0415DF0529B038C900B03C30 /* LoginView.swift in Sources */,
 				0415DEDD29B0384600B03C30 /* ContentView.swift in Sources */,
 				0415DEDB29B0384600B03C30 /* Just_List_ItApp.swift in Sources */,
 			);
