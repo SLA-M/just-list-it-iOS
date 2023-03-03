@@ -1,2 +1,7 @@
 # just-list-it-iOS
-now, list it!
+
+Ready to list?
+
+Now, List it!
+
+- [Wiki](https://github.com/SLA-M/just-list-it-iOS/wiki)
