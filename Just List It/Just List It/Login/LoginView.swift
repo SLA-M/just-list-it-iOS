@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
+    @EnvironmentObject var viewModel: LoginViewModel
     @State private var email: String = ""
     @State private var password: String = ""
     
@@ -25,7 +26,6 @@ struct LoginView: View {
                     .foregroundColor(.Text)
                 
                 //Email, Password TextField
-                
                 ZStack(alignment: .leading) {
                     if email.isEmpty {
                         Text("Enter your email address...")
@@ -83,12 +83,12 @@ struct LoginView: View {
                 //Google, Apple Login Button
                 HStack(spacing:40) {
                     Button {
-                        
+                        viewModel.signIn()
                     } label: {
                         Image.Google
                             .resizable()
-                            .frame(width: 50, height: 50)
-                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 45, height: 45)
+                            .aspectRatio(contentMode: .fill)
                             .cornerRadius(25)
                             
                     }
@@ -98,7 +98,7 @@ struct LoginView: View {
                     } label: {
                         Image.Apple
                             .resizable()
-                            .frame(width: 50, height: 50)
+                            .frame(width: 45, height: 45)
                             .aspectRatio(contentMode: .fill)
                             .cornerRadius(25)
                             
