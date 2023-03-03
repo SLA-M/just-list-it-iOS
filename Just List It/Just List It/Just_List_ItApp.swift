@@ -11,7 +11,7 @@ import SwiftUI
 struct Just_List_ItApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
