@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Just_List_ItApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject var viewModel = LoginViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
+                .environmentObject(viewModel)
         }
     }
 }
