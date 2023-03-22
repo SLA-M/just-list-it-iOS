@@ -20,7 +20,6 @@
 		0415DF1029B1A5A800B03C30 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 0415DF0F29B1A5A800B03C30 /* GoogleSignIn */; };
 		0415DF1529B1A73A00B03C30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0415DF1429B1A73A00B03C30 /* GoogleService-Info.plist */; };
 		0415DF1829B1A75F00B03C30 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415DF1729B1A75F00B03C30 /* LoginViewModel.swift */; };
-		0415DF1A29B1A97E00B03C30 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415DF1929B1A97E00B03C30 /* GoogleSignInButton.swift */; };
 		0415DF1C29B1AAF200B03C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415DF1B29B1AAF200B03C30 /* AppDelegate.swift */; };
 		0415DF1E29B1AB3400B03C30 /* View + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415DF1D29B1AB3400B03C30 /* View + Extension.swift */; };
 /* End PBXBuildFile section */
@@ -58,7 +57,6 @@
 		0415DF1329B1A6F500B03C30 /* Just-List-It-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Just-List-It-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0415DF1429B1A73A00B03C30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0415DF1729B1A75F00B03C30 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		0415DF1929B1A97E00B03C30 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		0415DF1B29B1AAF200B03C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0415DF1D29B1AB3400B03C30 /* View + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,11 +161,27 @@
 		0415DF1629B1A75000B03C30 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				0415DF0429B038C900B03C30 /* LoginView.swift */,
-				0415DF1729B1A75F00B03C30 /* LoginViewModel.swift */,
-				0415DF1929B1A97E00B03C30 /* GoogleSignInButton.swift */,
+				0415DF2029B6E11200B03C30 /* ViewModel */,
+				0415DF1F29B6E10000B03C30 /* View */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		0415DF1F29B6E10000B03C30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0415DF0429B038C900B03C30 /* LoginView.swift */,
+			);
+			name = View;
+			path = "퍋ㅈ";
+			sourceTree = "<group>";
+		};
+		0415DF2029B6E11200B03C30 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0415DF1729B1A75F00B03C30 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,7 +326,6 @@
 				0415DF0529B038C900B03C30 /* LoginView.swift in Sources */,
 				0415DF0A29B19D9700B03C30 /* Image + Extension.swift in Sources */,
 				0415DF1C29B1AAF200B03C30 /* AppDelegate.swift in Sources */,
-				0415DF1A29B1A97E00B03C30 /* GoogleSignInButton.swift in Sources */,
 				0415DF0829B1976B00B03C30 /* Color + Extension.swift in Sources */,
 				0415DEDB29B0384600B03C30 /* Just_List_ItApp.swift in Sources */,
 				0415DF1E29B1AB3400B03C30 /* View + Extension.swift in Sources */,

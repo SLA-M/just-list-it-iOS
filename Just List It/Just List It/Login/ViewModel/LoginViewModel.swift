@@ -17,7 +17,7 @@ class LoginViewModel: ObservableObject {
     
     @Published var state: SignInState = .signedOut
     
-    func signIn() {
+    func googleSignIn() {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
 
         let config = GIDConfiguration(clientID: clientID)
@@ -58,10 +58,8 @@ class LoginViewModel: ObservableObject {
     
     func signOut() {
         GIDSignIn.sharedInstance.signOut()
-        
         do {
             try Auth.auth().signOut()
-            
             state = .signedOut
         } catch {
             print(error.localizedDescription)
