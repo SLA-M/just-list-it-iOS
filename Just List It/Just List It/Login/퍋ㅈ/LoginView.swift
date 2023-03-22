@@ -79,18 +79,16 @@ struct LoginView: View {
                 }
                 .padding(10)
                 
-                
                 //Google, Apple Login Button
                 HStack(spacing:40) {
                     Button {
-                        viewModel.signIn()
+                        viewModel.googleSignIn()
                     } label: {
                         Image.Google
                             .resizable()
                             .frame(width: 45, height: 45)
                             .aspectRatio(contentMode: .fill)
                             .cornerRadius(25)
-                            
                     }
                     
                     Button {
