@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
-struct LoginView: View {
+struct LoginScene: View {
     @EnvironmentObject var viewModel: LoginViewModel
     @State private var email: String = ""
     @State private var password: String = ""
@@ -66,7 +67,7 @@ struct LoginView: View {
                 
                 //Login Button
                 Button {
-                    
+                    viewModel.emailSignIn(email: email, password: password)
                 } label: {
                     Text("Login")
                         .padding(.horizontal,40)
@@ -112,6 +113,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginScene()
     }
 }

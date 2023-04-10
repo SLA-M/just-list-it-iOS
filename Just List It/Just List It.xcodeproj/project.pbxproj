@@ -22,6 +22,9 @@
 		0415DF1829B1A75F00B03C30 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415DF1729B1A75F00B03C30 /* LoginViewModel.swift */; };
 		0415DF1C29B1AAF200B03C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415DF1B29B1AAF200B03C30 /* AppDelegate.swift */; };
 		0415DF1E29B1AB3400B03C30 /* View + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415DF1D29B1AB3400B03C30 /* View + Extension.swift */; };
+		044317E429CAA2F9000B0351 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044317E329CAA2F9000B0351 /* FirebaseAuthService.swift */; };
+		044317E729CAA341000B0351 /* AuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044317E629CAA341000B0351 /* AuthProtocol.swift */; };
+		044317EA29CAA5B5000B0351 /* LoginMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044317E929CAA5B5000B0351 /* LoginMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		0415DF1729B1A75F00B03C30 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0415DF1B29B1AAF200B03C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0415DF1D29B1AB3400B03C30 /* View + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extension.swift"; sourceTree = "<group>"; };
+		044317E329CAA2F9000B0351 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		044317E629CAA341000B0351 /* AuthProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProtocol.swift; sourceTree = "<group>"; };
+		044317E929CAA5B5000B0351 /* LoginMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,14 +117,14 @@
 		0415DED929B0384600B03C30 /* Just List It */ = {
 			isa = PBXGroup;
 			children = (
-				0415DF1629B1A75000B03C30 /* Login */,
+				044317EE29CBF5C2000B0351 /* Utils */,
+				044317ED29CBF5B2000B0351 /* Presentation */,
+				044317EC29CBF5AC000B0351 /* Domain */,
+				044317EB29CBF599000B0351 /* Data */,
 				0415DF1429B1A73A00B03C30 /* GoogleService-Info.plist */,
 				0415DF1329B1A6F500B03C30 /* Just-List-It-Info.plist */,
-				0415DF0629B1975900B03C30 /* Extension */,
-				0415DEDA29B0384600B03C30 /* Just_List_ItApp.swift */,
 				0415DEDE29B0384800B03C30 /* Assets.xcassets */,
 				0415DEE029B0384800B03C30 /* Preview Content */,
-				0415DF1B29B1AAF200B03C30 /* AppDelegate.swift */,
 			);
 			path = "Just List It";
 			sourceTree = "<group>";
@@ -148,40 +154,171 @@
 			path = "Just List ItUITests";
 			sourceTree = "<group>";
 		};
-		0415DF0629B1975900B03C30 /* Extension */ = {
+		0415DF0629B1975900B03C30 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				0415DF0729B1976B00B03C30 /* Color + Extension.swift */,
 				0415DF0929B19D9700B03C30 /* Image + Extension.swift */,
 				0415DF1D29B1AB3400B03C30 /* View + Extension.swift */,
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0415DF1629B1A75000B03C30 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				0415DF2029B6E11200B03C30 /* ViewModel */,
-				0415DF1F29B6E10000B03C30 /* View */,
+				044317E929CAA5B5000B0351 /* LoginMethods.swift */,
+				0415DF1729B1A75F00B03C30 /* LoginViewModel.swift */,
+				0415DF0429B038C900B03C30 /* LoginView.swift */,
+				044317E829CAA5A7000B0351 /* Enums */,
+				044317E529CAA331000B0351 /* Protocols */,
+				0415DF2029B6E11200B03C30 /* ViewModels */,
+				0415DF1F29B6E10000B03C30 /* Views */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		0415DF1F29B6E10000B03C30 /* View */ = {
+		0415DF1F29B6E10000B03C30 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0415DF0429B038C900B03C30 /* LoginView.swift */,
 			);
-			name = View;
+			name = Views;
 			path = "퍋ㅈ";
 			sourceTree = "<group>";
 		};
-		0415DF2029B6E11200B03C30 /* ViewModel */ = {
+		0415DF2029B6E11200B03C30 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				0415DF1729B1A75F00B03C30 /* LoginViewModel.swift */,
 			);
-			path = ViewModel;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		044317E229CAA2ED000B0351 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				044317FB29CBFA15000B0351 /* Auth */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		044317E529CAA331000B0351 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				044317E629CAA341000B0351 /* AuthProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		044317E829CAA5A7000B0351 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		044317EB29CBF599000B0351 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				044317FA29CBF972000B0351 /* Protocols */,
+				044317F929CBF96C000B0351 /* DataSources */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		044317EC29CBF5AC000B0351 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				044317F829CBF957000B0351 /* Entities */,
+				044317F729CBF943000B0351 /* Protocols */,
+				044317F629CBF938000B0351 /* Repositories */,
+				044317EF29CBF60B000B0351 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		044317ED29CBF5B2000B0351 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				044317F529CBF6F1000B0351 /* App */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		044317EE29CBF5C2000B0351 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0415DF0629B1975900B03C30 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		044317EF29CBF60B000B0351 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		044317F129CBF638000B0351 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0415DF1629B1A75000B03C30 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		044317F529CBF6F1000B0351 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0415DF1B29B1AAF200B03C30 /* AppDelegate.swift */,
+				0415DEDA29B0384600B03C30 /* Just_List_ItApp.swift */,
+				044317F129CBF638000B0351 /* Scenes */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		044317F629CBF938000B0351 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		044317F729CBF943000B0351 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		044317F829CBF957000B0351 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		044317F929CBF96C000B0351 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				044317E229CAA2ED000B0351 /* Services */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		044317FA29CBF972000B0351 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		044317FB29CBFA15000B0351 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				044317E329CAA2F9000B0351 /* FirebaseAuthService.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,12 +460,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044317E429CAA2F9000B0351 /* FirebaseAuthService.swift in Sources */,
 				0415DF0529B038C900B03C30 /* LoginView.swift in Sources */,
 				0415DF0A29B19D9700B03C30 /* Image + Extension.swift in Sources */,
 				0415DF1C29B1AAF200B03C30 /* AppDelegate.swift in Sources */,
+				044317EA29CAA5B5000B0351 /* LoginMethods.swift in Sources */,
 				0415DF0829B1976B00B03C30 /* Color + Extension.swift in Sources */,
 				0415DEDB29B0384600B03C30 /* Just_List_ItApp.swift in Sources */,
 				0415DF1E29B1AB3400B03C30 /* View + Extension.swift in Sources */,
+				044317E729CAA341000B0351 /* AuthProtocol.swift in Sources */,
 				0415DF1829B1A75F00B03C30 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

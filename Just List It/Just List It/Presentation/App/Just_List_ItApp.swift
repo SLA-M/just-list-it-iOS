@@ -14,7 +14,7 @@ struct Just_List_ItApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            LoginScene()
                 .environmentObject(viewModel)
         }
     }
